@@ -1,13 +1,17 @@
 ﻿function initMap() {
     const ubicacion = new Localizacion(() => {
+        const myLatLng = { lat: ubicacion.latitude, lng: ubicacion.longitude };
+
         const options = {
-            center: {
-                lat: ubicacion.latitude,
-                lng: ubicacion.longitude
-            },
+            center: myLatLng,
             zoom: 14
         }
         var map = document.getElementById('map');
         const mapa = new google.maps.Map(map, options);
+        const marcador = new.google.maps.Marker({
+            position: myLatLng,
+            map: mapa,
+            title: "Mi primer marcador"
+        });
     });
 }
