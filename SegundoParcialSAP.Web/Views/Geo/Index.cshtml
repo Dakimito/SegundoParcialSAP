@@ -3,22 +3,22 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Maps Api</h2>
-@*<style>
-    #map {
-        width: 500px;
-        height: 500px;
-    }
-</style>*@
-<div id="map"></div>
-<script async defer
-        src="https://maps.googleapis.com/api/js?key=AIzaSyCor_0fFwcXjzCiqjBrD6_Dc3dMc61iIYc=initMap">
-</script>
+<h2>Index</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin="" />
+</head>
 
-@* Prueba 2 *@
-@Scripts.Render("~/Scripts/main.js")
-@Scripts.Render("~/Scripts/localizacion.js")
+<div id="myMap" style="height: 600px"></div>
 
-@* Prueba 1 *@
-<script src="~/Scripts/main.js"></script>
-<script src="~/Scripts/localizacion.js"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+<script src="~/Scripts/map.js"></script>
+
+<div id="mapCanvas"></div>
