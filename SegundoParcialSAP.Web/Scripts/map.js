@@ -14,7 +14,7 @@ let iconMarker = L.icon({
 })
 
 let marker2 = L.marker([-34.61, -58.50], { icon: iconMarker }).addTo(myMap)
-let marker3 = L.marker([-32.88, -68.87]).addTo(myMap) 
+
 
 myMap.doubleClickZoom.disable()
 myMap.on('dblclick', e => {
