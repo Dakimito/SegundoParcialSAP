@@ -1,7 +1,7 @@
-var camionlat = 57.74;
-var camionlng = 11.94;
-var destinolat = 57.6792;
-var destinolng = 11.949;
+var camionlat = -34.6131500;
+var camionlng = -58.3772300;
+var destinolat = -31.4135000;
+var destinolng = -64.1810500;
 
 
 
