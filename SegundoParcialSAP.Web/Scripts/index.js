@@ -1,3 +1,8 @@
+var camionlat = 57.74;
+var camionlng = 11.94;
+var destinolat = 57.6792;
+var destinolng = 11.949;
+
 var map = L.map('map');
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
@@ -6,8 +11,8 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 
 var control = L.Routing.control(L.extend(window.lrmConfig, {
 	waypoints: [
-		L.latLng(57.74, 11.94),
-		L.latLng(57.6792, 11.949)
+		L.latLng(camionlat, camionlng),
+		L.latLng(destinolat, destinolng)
 	],
 	geocoder: L.Control.Geocoder.nominatim(),
 	routeWhileDragging: true,
