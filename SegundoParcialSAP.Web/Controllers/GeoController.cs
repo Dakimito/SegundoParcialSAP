@@ -11,6 +11,8 @@ namespace SegundoParcialSAP.Web.Controllers
         // GET: Geo
         public ActionResult Index()
         {
+            ViewBag.latitud = 10;
+            ViewBag.longitud = 10;
             return View();
         }
 

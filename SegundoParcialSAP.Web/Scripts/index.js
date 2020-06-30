@@ -3,6 +3,8 @@ var camionlng = 11.94;
 var destinolat = 57.6792;
 var destinolng = 11.949;
 
+
+
 var map = L.map('map');
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
